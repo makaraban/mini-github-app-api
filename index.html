@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mni Github App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        github: {
+                            dark: '#0d1117',
+                            gray: '#161b22',
+                            border: '#30363d',
+                            text: '#f0f6fc',
+                            muted: '#8b949e',
+                            blue: '#58a6ff'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0d1117;
+            color: #f0f6fc;
+        }
+        .github-card {
+            background: linear-gradient(145deg, #161b22, #0d1117);
+            border: 1px solid #30363d;
+        }
+        .repo-card {
+            background: linear-gradient(145deg, #161b22, #0d1117);
+            border: 1px solid #30363d;
+        }
+    </style>
+  </head>
+  <body class="github-gradient min-h-screen text-github-gray-100 font-mono">
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
